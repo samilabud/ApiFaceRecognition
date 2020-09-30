@@ -52,7 +52,7 @@ app.put("/image",(req,res)=>{image.handleEntries(req, res, db)});
 app.post("/imageurl",(req,res)=>{image.handleApiCall(req, res)});
 
 //Listening port 3000
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT,()=>{
     console.log(process.env.WINDIR);
     console.log(`Servidor corriendo en puerto ${PORT}`);
