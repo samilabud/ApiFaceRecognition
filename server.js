@@ -8,10 +8,21 @@ const signin = require('./controllers/signin');
 const profile = require('./controllers/profile');
 const image = require("./controllers/image")
 
+// const db = knex({
+//     client: 'pg',
+//     connectionString: process.env.DATABASE_URL,
+//     ssl: true
+// });  
+
 const db = knex({
     client: 'pg',
-    connectionString: process.env.DATABASE_URL,
-    ssl: true
+    connection: {
+      host : 'ec2-52-72-65-76.compute-1.amazonaws.com',
+      user : 'hebreteefqaskl',
+      port: '5432',
+      password : 'c7a3583c749988f7cce07d8c0dbe1fd06325b34a42f1b5ba86a085ea73c4000e',
+      database : 'd21vlb7jdff9se'
+    }
 });  
 
 
