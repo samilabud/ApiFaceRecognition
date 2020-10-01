@@ -14,6 +14,7 @@ const db = knex({
     ssl: true
 });  
 
+
 const app = express();
 
 app.use(express.urlencoded({extended:false}));
@@ -30,7 +31,7 @@ app.get("/",(req,res)=>{
         else
             res.json("No hay usuarios en la base de datos");
     })
-    .catch(err=>{res.json("Error buscando usuarios." + err)})
+    .catch(err=>{res.json("Error buscando usuarios." + err + " ---- " + process.env.DATABASE_URL)})
    
    
 })
