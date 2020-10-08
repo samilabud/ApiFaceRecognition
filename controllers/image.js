@@ -1,8 +1,15 @@
 const Clarifai = require('clarifai');
-    
+//config
+const config = require("../constants/config");
+let apiKey = "";
+
+if(process.env.NODE_ENV.indexOf("development")>=0){
+    apiKey = config.enviroments.development.apiclarifai;
+}else{
+    apiKey = process.env.API_CLARIFAI
+}
 const app = new Clarifai.App({
-    //apiKey: '531b1501937b46ce9504c24f406fd7e3'
-    apiKey: process.env.API_CLARIFAI
+    apiKey: apiKey
 });
 const handleApiCall = (req, res) => {
     app.models.initModel({id: Clarifai.FACE_DETECT_MODEL})

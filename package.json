@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js",
-    "start:dev": "nodemon server.js"
+    "start": "set NODE_ENV=production && nodemon server.js",
+    "start:dev": "set NODE_ENV=development && nodemon server.js"
   },
   "keywords": [],
   "author": "",
