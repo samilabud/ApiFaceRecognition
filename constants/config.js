@@ -4,7 +4,7 @@ const enviroments = {
         user : 'postgres',
         password : '123456',
         database : 'facerecognitiondb',
-        apiclarifai:'ea06bdd29d8043b48f5d12d80b177a0f'
+        apiclarifai:'f8bb2816e8e54560b958cc2594670f95'
     },
 }
 
