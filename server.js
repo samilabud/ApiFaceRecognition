@@ -46,18 +46,13 @@ const dbConfig = process.env.NODE_ENV.indexOf("development")>=0 ? developmentDBC
 db = knex({
     client: 'pg',
     connection: dbConfig
-});  
-
-var corsOptions = {
-    origin: 'https://webfacerecognition-871a139bbb16.herokuapp.com/',
-    optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
-}
+});
 
 const app = express();
 
 app.use(express.urlencoded({extended:false}));
 app.use(express.json({extended:false}));
-app.use(cors(corsOptions));
+app.use(cors());
 app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*');
     next();
