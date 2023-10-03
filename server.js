@@ -48,11 +48,16 @@ db = knex({
     connection: dbConfig
 });  
 
+var corsOptions = {
+    origin: 'https://webfacerecognition-871a139bbb16.herokuapp.com/',
+    optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+}
+
 const app = express();
 
 app.use(express.urlencoded({extended:false}));
 app.use(express.json({extended:false}));
-app.use(cors());
+app.use(cors(corsOptions));
 
 app.get("/",(req,res)=>{
     db.select("*").from("users")
