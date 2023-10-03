@@ -7,8 +7,12 @@ const enviroments = {
         apiclarifai:'ea06bdd29d8043b48f5d12d80b177a0f'
     },
     production:{
-        active: false
-    }
+        host : '69lHAXPXtPYSRyNh2O4SZsnwSiDwI4b0@dpg-cke3andjhfbs73akqaj0-a.ohio-postgres.render.com',
+        user : 'facerecognition',
+        password : '69lHAXPXtPYSRyNh2O4SZsnwSiDwI4b0',
+        database : 'facerecognitiondb_iuni',
+        apiclarifai:'ea06bdd29d8043b48f5d12d80b177a0f'
+    },
 }
 
 module.exports = {
@@ -22,7 +26,7 @@ CREATE TABLE users (
     email text UNIQUE NOT NULL,
     entries BIGINT DEFAULT 0,
     joined TIMESTAMP NOT NULL
-)
+);
 
 CREATE TABLE login (
     id serial PRIMARY KEY,

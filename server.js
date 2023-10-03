@@ -16,28 +16,19 @@ const image = require("./controllers/image");
 //config
 const config = require("./constants/config.js");
 let db = "";
-if(process.env.NODE_ENV.indexOf("development")>=0){
-    let {host,user,password,database} = config.enviroments.development;
-    db = knex({
-        client: 'pg',
-        connection: {
-          host : host,
-          user : user,
-          password : password,
-          database : database
-        }
-    });  
-}else {
-    db = knex({
-        client: 'pg',
-        connection:{
-            connectionString: process.env.DATABASE_URL,
-            ssl: {
-                rejectUnauthorized: false,
-            }
-        }
-    });
-}
+let {host,user,password,database} = process.env.NODE_ENV.indexOf("development")>=0 
+? config.enviroments.development 
+: config.enviroments.production;
+
+db = knex({
+    client: 'pg',
+    connection: {
+      host : host,
+      user : user,
+      password : password,
+      database : database
+    }
+});  
 
 
 
