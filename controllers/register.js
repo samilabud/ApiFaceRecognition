@@ -15,10 +15,11 @@ const handleRegister = (req, res, db, bcrypt)=>{
         .into("login")
         .returning("email")
         .then(loginEmail=>{
+            console.log(loginEmail,'loginEmail')
             return trx('users')
             .returning("*")
             .insert({
-                email: loginEmail[0],
+                email: loginEmail[0].email,
                 name: name,
                 joined: new Date()
             })

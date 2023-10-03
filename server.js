@@ -1,3 +1,9 @@
+/* README
+    TO RUN ON DEV:
+        NODE_ENV=development npm run dev
+    CREATE DB SEE:
+        /ApiFaceRecognition/constants/config.js
+*/
 const express = require('express');
 const bcrypt = require('bcryptjs');
 const cors = require('cors');

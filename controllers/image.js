@@ -22,6 +22,7 @@ const handleApiCall = (req, res) => {
 const handleEntries = (req, res, db) => {
     const {id} = req.body;
 
+    console.log("al menos la llamo")
     db("users")
     .where("id","=",id)
     .increment("entries",1)
