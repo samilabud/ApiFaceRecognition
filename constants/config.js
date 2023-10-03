@@ -6,13 +6,6 @@ const enviroments = {
         database : 'facerecognitiondb',
         apiclarifai:'ea06bdd29d8043b48f5d12d80b177a0f'
     },
-    production:{
-        host : '69lHAXPXtPYSRyNh2O4SZsnwSiDwI4b0@dpg-cke3andjhfbs73akqaj0-a',
-        user : 'facerecognition',
-        password : '69lHAXPXtPYSRyNh2O4SZsnwSiDwI4b0',
-        database : 'facerecognitiondb_iuni',
-        apiclarifai:'ea06bdd29d8043b48f5d12d80b177a0f'
-    },
 }
 
 module.exports = {
