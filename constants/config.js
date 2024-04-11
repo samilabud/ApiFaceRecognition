@@ -13,8 +13,7 @@ module.exports = {
 };
 
 //Instal psql from homebrew (https://www.postgresql.org/download/macosx/), add to path, connect to url using psql command plus url for connection, e,g:
-//   psql postgres://facerecognition:69lHAXPXtPYSRyNh2O4SZsnwSiDwI4b0@dpg-cke3andjhfbs73akqaj0-a.ohio-postgres.render.com/facerecognitiondb_iuni
-
+//     psql postgres://facerecognition:fLUItFyk7aAbXAZ2HVjR3tQCTOOX3tdp@dpg-cobcil7109ks738h6dbg-a.oregon-postgres.render.com/facerecognitiondb_unl7
 //Cheat sheet: https://www.timescale.com/learn/postgres-cheat-sheet/databases
 
 //Run this after connnection
