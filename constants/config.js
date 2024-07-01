@@ -1,8 +1,8 @@
 const enviroments = {
   development: {
     host: "localhost",
-    user: "postgres",
-    password: "123456",
+    user: "samilabud",
+    password: "",
     database: "facerecognitiondb",
     apiclarifai: "f8bb2816e8e54560b958cc2594670f95",
   },
