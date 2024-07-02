@@ -13,7 +13,7 @@ module.exports = {
 };
 
 //Instal psql from homebrew (https://www.postgresql.org/download/macosx/), add to path, connect to url using psql command plus url for connection, e,g:
-//     psql postgres://facerecognition:fLUItFyk7aAbXAZ2HVjR3tQCTOOX3tdp@dpg-cobcil7109ks738h6dbg-a.oregon-postgres.render.com/facerecognitiondb_unl7
+//     psql postgresql://facerecognition:MEMBfjdtJr8e7mt4HLcJxb17k65r38qr@dpg-cq262a3v2p9s73en9l60-a.oregon-postgres.render.com/facerecognitiondb_9tp4
 //Cheat sheet: https://www.timescale.com/learn/postgres-cheat-sheet/databases
 
 //Run this after connnection
@@ -36,5 +36,13 @@ INSERT INTO public.users(name, email, entries, joined)
 	VALUES ('Samil', 'samilabud@gmail.com', 0, '2022-08-23 18:42:02');
 
 
-Go to https://railway.app/project/c196071c-c825-45c9-87f9-05a3083ab10c/service/722194bd-aa9a-4fba-9b85-f463ef2282be/variables and change variables
+Go to dashboard.render.com and change the environment variables
+1- Create the database
+2- Wait for the database to be created
+3- Copy the the environment variables from the new database UI like
+  DATABASE_DB => Database
+  DATABASE_HOST => Hostname
+  DATABASE_PW => Password
+  DATABASE_USER => Username
+  DATABASE_URL => External Database URL
 */
