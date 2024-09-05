@@ -20,7 +20,7 @@ let db = "";
 let productionDBConfig = {};
 let developmentDBConfig = {};
 
-if (process.env.NODE_ENV.indexOf("development") >= 0) {
+if (process.env.NODE_ENV?.indexOf("development") >= 0) {
   const { host, user, password, database } = config.enviroments.development;
   developmentDBConfig = {
     host,
@@ -41,7 +41,7 @@ if (process.env.NODE_ENV.indexOf("development") >= 0) {
 }
 
 const dbConfig =
-  process.env.NODE_ENV.indexOf("development") >= 0
+  process.env.NODE_ENV?.indexOf("development") >= 0
     ? developmentDBConfig
     : productionDBConfig;
 
