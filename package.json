@@ -11,15 +11,15 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "nodemon": "^3.1.4"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
-    "clarifai-nodejs-grpc": "^9.8.5",
+    "clarifai-nodejs-grpc": "^10.8.1",
     "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "knex": "^2.5.1",
-    "nodemon": "^2.0.4",
-    "pg": "^8.3.3"
+    "express": "^4.19.2",
+    "knex": "^3.1.0",
+    "nodemon": "^3.1.4",
+    "pg": "^8.12.0"
   }
 }
