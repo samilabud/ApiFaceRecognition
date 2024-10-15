@@ -1,7 +1,7 @@
-## API Face Recognition
+## Face Recognition API
 
-Built with NodeJS (JavaScript), Express, PostgreSQL with KnexJS. This API handle user login and registration, also can process any image and will detect faces using Clarifai's AI. This is updated to 2024.
+This API, built with Node.js, Express, and PostgreSQL using Knex.js, handles user authentication (login and registration) and processes images to detect faces using Clarifai's powerful AI. Updated for 2024, it offers a streamlined and efficient solution for face recognition tasks.
 
-## Demo
+## Live Demo
 
-https://api-face-recognition.onrender.com/
+Check out the live demo: [Face Recognition API](https://api-face-recognition.onrender.com/)
